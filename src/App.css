@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+#section {
+  height: 100vh;
+  background-image: url("./photos/IMG_E4575.JPG");
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+  opacity: 0.8;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 480px) {
+  #section {
+    background-image: none;
+    height: 70px;
   }
 }
+#logo {
+  width: 70px;
+  height: 70px;
+  background-image: url("./photos/erch-transformed.png");
+  background-size:cover;
+}
+#navbar {
+  padding-inline: 1%;
+  padding-block: 1%;
+}
+#btn {
+  width: 100px;
+  border-radius: 50px;
+}
+#btn1 {
+  width: 100px;
+  border-radius: 50px;
+}
+#btn2 {
+  width: 100px;
+  border-radius: 50px;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup {
+  height: 250px;
+  width: 100%;
+  gap: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dcontainer {
+  width: 400px;
+  height: 60%;
+  padding: 32px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px grey;
+}
+.signInInput {
+  width: 65%;
+  height: 40px;
+}
+.div {
+  width: 100%;
+  height: fit-content;
+}
+#submit {
+   width: 150px;
+   height: 40px;
+}
+.timeTable {
+  width: 300px;
+  background-color: rgb(255, 248, 236);
+  padding: 16px 32px 16px 32px;
+  border-radius: 10px;
+  height: fit-content;
+}
+.card {
+  width: 300px;
+}
+.footer {
+  height: fit-content;
+  display: grid;
+  grid-template-areas: 
+  "newsLetter"
+  "contact"
+  "contact";
+}
+.newsLetter {
+  background-color: rgb(43, 43, 43);
+  grid-area: newsLetter;
+  padding: 32px 32px 32px 32px;
+}
+.contact {
+  background-color: rgb(20, 20, 20);
+  grid-area: contact;
+  padding: 64px 64px 32px 64px;
+}
+#signIn {
+  width: 110px;
+  border-radius: 40px;
+  height: 40px;
+}
+.date {
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  padding-inline: 16px;
+}
+.form-select {
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+}
+.inputs {
+  height: fit-content;
+  border-radius: 15px;
+  padding: 0px 64px 64px 64px;
+  width: fit-content;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221 221 221 / 90%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#takeTimeBtn {
+  width: 300px;
+  height: 40px;
+}
+.SMS {
+  width: 100%;
+  height: fit-content;
+  padding: 0px 64px 64px 64px;
+}
+#signInBtn {
+  width: 100%;
+  height: 40px;
+}
+.input{
+  width: 100%;
 }
